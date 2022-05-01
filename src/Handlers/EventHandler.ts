@@ -17,18 +17,18 @@ export default class EventHandler {
         if (!data.events) return void null
         const add = event.action === 'add'
         const text = add
-					? `- ${group.subject || "___"} -\n\n💠 *Group Description:*\n${
+					? `- ${group.subject || "___"} -\n\n🤍❤️ *𝐆𝐑𝐎𝐔𝐏 𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍:*\n${
 							group.desc
 					  }\n\nHope you follow the rules and have fun!\n\n${event.participants
 							.map((jid) => `@${jid.split("@")[0]}`)
 							.join(", ")}`
 					: event.action === "remove"
-					? `Goodbye *@${
+					? `𝐆𝐎𝐎𝐃𝐁𝐘𝐄 *@${
 							event.participants[0].split("@")[0]
-					  }* 👋🏻, we're probably not gonna miss you.`
-					: `Ara Ara, looks like *@${
+					  }* 👋🏻, 𝐰𝐞'𝐫𝐞 𝐩𝐫𝐨𝐛𝐚𝐛𝐥𝐲 𝐧𝐨𝐭 𝐠𝐨𝐧𝐧𝐚 𝐦𝐢𝐬𝐬 𝐲𝐨𝐮.`
+					: `𝐀𝐫𝐚 𝐀𝐫𝐚, 𝐋𝐨𝐨𝐤𝐬 𝐋𝐢𝐤𝐞 *@${
 							event.participants[0].split("@")[0]
-					  }* got ${this.client.util.capitalize(event.action)}d${
+					  }* 𝐠𝐨𝐭 ${this.client.util.capitalize(event.action)}d${
 							event.actor ? ` by @${event.actor.split("@")[0]}` : ""
 					  }`;
         const contextInfo = {
