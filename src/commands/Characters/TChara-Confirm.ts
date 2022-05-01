@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
     const data = await (await this.client.getGroupData(M.from)).charaTrade;
     if (!data.ongoing)
       return void M.reply(
-        `There aren't any character trade around for you to confirm.`
+        `𝐓𝐡𝐞𝐫𝐞 𝐚𝐫𝐞𝐧'𝐭 𝐚𝐧𝐲 𝐜𝐡𝐚𝐫𝐚𝐜𝐭𝐞𝐫 𝐭𝐫𝐚𝐝𝐞 𝐚𝐫𝐨𝐮𝐧𝐝 𝐟𝐨𝐫 𝐲𝐨𝐮 𝐭𝐨 𝐜𝐨𝐧𝐟𝐢𝐫𝐦😂.`
       );
     const user = M.sender.jid;
     const gallery = await (await this.client.getUser(user)).gallery;
