@@ -19,9 +19,9 @@ export default class Command extends BaseCommand {
       await this.client.getGroupData(M.from)
     ).charaTrade;
     if (!data.ongoing)
-      return void M.reply(`🟥 *There aren't any trade ongoing*`);
+      return void M.reply(`🟥 *𝐓𝐡𝐞𝐫𝐞 𝐚𝐫𝐞𝐧'𝐭 𝐚𝐧𝐲 𝐭𝐫𝐚𝐝𝐞 𝐨𝐧𝐠𝐨𝐢𝐧𝐠😏*`);
     if (data.startedBy !== M.sender.jid)
-      return void M.reply(`🟥 *You can't delete this trade*`);
+      return void M.reply(`🟥 *𝐘𝐨𝐮 𝐜𝐚𝐧'𝐭 𝐝𝐞𝐥𝐞𝐭𝐞 𝐭𝐡𝐢𝐬 𝐭𝐫𝐚𝐝𝐞😂*`);
     await this.client.DB.group.updateMany(
       { jid: M.from },
       {
