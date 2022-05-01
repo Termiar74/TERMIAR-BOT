@@ -23,12 +23,12 @@ export default class Command extends BaseCommand {
   ): Promise<void> => {
     if (await (await this.client.getGroupData(M.from)).charaTrade.ongoing)
       return void M.reply(
-        `🟥 *There is already a character trade ongoing for this group. Try again later.*`
+        `🟥 *𝐓𝐡𝐞𝐫𝐞 𝐢𝐬 𝐚𝐥𝐫𝐞𝐚𝐝𝐲 𝐚 𝐜𝐡𝐚𝐫𝐚𝐜𝐭𝐞𝐫 𝐭𝐫𝐚𝐝𝐞 𝐨𝐧𝐠𝐨𝐢𝐧𝐠 𝐟𝐨𝐫 𝐭𝐡𝐢𝐬 𝐠𝐫𝐨𝐮𝐩. 𝐓𝐑𝐘 𝐀𝐆𝐀𝐈𝐍 𝐥𝐀𝐓𝐄𝐑😂😂😂.*`
       );
     const user = M.sender.jid;
     if (!joined)
       return void M.reply(
-        `🟥 *Provide the characters. Example - ${this.client.config.prefix}tchara [character_index_number_in_your_gallery_that_you_wanna_give] [id_of_the_character_that_you_want]*`
+        `🟥 *𝐏𝐫𝐨𝐯𝐢𝐝𝐞 𝐭𝐡𝐞 𝐜𝐡𝐚𝐫𝐚𝐜𝐭𝐞𝐫𝐬. 𝐄𝐗𝐀𝐌𝐏𝐋𝐄 - ${this.client.config.prefix}tchara [character_index_number_in_your_gallery_that_you_wanna_give] [id_of_the_character_that_you_want]*`
       );
     const terms: any = joined.trim().split(" ");
     const id = terms[0]
