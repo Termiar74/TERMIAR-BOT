@@ -99,7 +99,7 @@ export default class MessageHandler {
                     MessageType.video,
                     Mimetype.gif,
                     undefined,
-                    `No such command, Baka! Have you never seen someone use the command *${this.client.config.prefix}help*`,
+                    `𝐍𝐨 𝐬𝐮𝐜𝐡 𝐜𝐨𝐦𝐦𝐚𝐧𝐝, 𝐁𝐚𝐤𝐚! 𝐇𝐚𝐯𝐞 𝐲𝐨𝐮 𝐧𝐞𝐯𝐞𝐫 𝐬𝐞𝐞𝐧 𝐬𝐨𝐦𝐞𝐨𝐧𝐞 𝐮𝐬𝐞 𝐭𝐡𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 *${this.client.config.prefix}𝐡𝐞𝐥𝐩*`,
                     undefined
                 )
 		const user = await this.client.getUser(M.sender.jid);
@@ -109,21 +109,21 @@ export default class MessageHandler {
 		});
 		if (state)
 			return void M.reply(
-				`✖ This command is disabled${
-					state.reason ? ` for ${state.reason}` : ""
+				`✖ 𝐓𝐡𝐢𝐬 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 𝐢𝐬 𝐝𝐢𝐬𝐚𝐛𝐥𝐞𝐝${
+					state.reason ? ` 𝐟𝐨𝐫 ${state.reason}` : ""
 				}`
 			);
 		if (!command.config?.dm && M.chat === "dm")
-			return void M.reply("This command can only be used in groups");
+			return void M.reply("𝐓𝐡𝐢𝐬 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 𝐜𝐚𝐧 𝐨𝐧𝐥𝐲 𝐛𝐞 𝐮𝐬𝐞𝐝 𝐢𝐧 𝐠𝐫𝐨𝐮𝐩𝐬👀");
 		if (
 			command.config?.modsOnly &&
 			!this.client.config.mods?.includes(M.sender.jid)
 		) {
-			return void M.reply(`Only MODS are allowed to use this command.`);
+			return void M.reply(`𝐎𝐧𝐥𝐲 𝐛𝐨𝐭 𝐎𝐖𝐍𝐄𝐑 𝐚𝐫𝐞 𝐚𝐥𝐥𝐨𝐰𝐞𝐝 𝐭𝐨 𝐮𝐬𝐞 𝐭𝐡𝐢𝐬 𝐜𝐨𝐦𝐦𝐚𝐧𝐝😂`);
 		}
 		if (command.config?.adminOnly && !M.sender.isAdmin)
 			return void M.reply(
-				`This command is only meant for the group admins, Baka!`
+				`𝐓𝐡𝐢𝐬 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 𝐨𝐧𝐥𝐲 𝐦𝐞𝐚𝐧𝐭 𝐟𝐨𝐫 𝐭𝐡𝐞 𝐠𝐫𝐨𝐮𝐩 𝐚𝐝𝐦𝐢𝐧𝐬😏😂`
 			);
 		try {
 			await command.run(M, this.parseArgs(args));
