@@ -22,7 +22,7 @@ export default class Command extends BaseCommand {
         const args = parsedArgs.joined.split(',')
         let buffer
         if (M.quoted?.message?.message?.imageMessage) {
-            M.reply('⭐ Posting Image Status')
+            M.reply('⭐ 𝐏𝐎𝐒𝐓𝐈𝐍𝐆 𝐈𝐌𝐀𝐆𝐄 𝐒𝐓𝐀𝐓𝐔𝐒')
             let i = 0
             while (i < 5) {
                 try {
@@ -39,7 +39,7 @@ export default class Command extends BaseCommand {
             }
             // this.client.sendMessage('status@broadcast', buffer, MessageType.image)
         } else if (M.WAMessage.message?.imageMessage) {
-            M.reply('Posting Image Status ⭐')
+            M.reply('𝐏𝐎𝐒𝐓𝐈𝐍𝐆 𝐈𝐌𝐀𝐆𝐄 𝐒𝐓𝐀𝐓𝐔𝐒..... ⭐')
             buffer = await this.client.downloadMediaMessage(M.WAMessage)
             const caption = args[0] || ''
             // M.reply(`caption : ${caption}`)
@@ -57,7 +57,7 @@ export default class Command extends BaseCommand {
             })
             // this.client.sendMessage('status@broadcast', buffer, MessageType.video)
         } else if (M.WAMessage.message?.videoMessage) {
-            M.reply('✨ Posting Video Status')
+            M.reply('✨ 𝐏𝐎𝐒𝐓𝐈𝐍𝐆 𝐕𝐈𝐃𝐄𝐎 𝐒𝐓𝐀𝐓𝐔𝐒')
             buffer = await this.client.downloadMediaMessage(M.WAMessage)
             const caption = args[0] || ''
             // M.reply(`caption : ${caption}`)
@@ -66,7 +66,7 @@ export default class Command extends BaseCommand {
             })
             // this.client.sendMessage('status@broadcast', buffer, MessageType.video)
         } else if (M.quoted?.message?.message?.conversation) {
-            M.reply('✨ Posting Text Status')
+            M.reply('✨ 𝐏𝐎𝐒𝐓𝐈𝐍𝐆 𝐓𝐄𝐗𝐓 𝐒𝐓𝐀𝐓𝐔𝐒')
             const text = M.quoted?.message?.message?.conversation || ''
             const backgroundArgb =
                 args.slice(3).map((arg) => `${parseInt(arg) / 16}${parseInt(arg) % 16}`) || 0x00000000
@@ -84,7 +84,7 @@ export default class Command extends BaseCommand {
                 MessageType.extendedText
             )
         } else if (!M.quoted?.message) {
-            M.reply('Posting Text Status ✨')
+            M.reply('𝐏𝐎𝐒𝐓𝐈𝐍𝐆 𝐓𝐄𝐗𝐓 𝐒𝐓𝐀𝐓𝐔𝐒 ✨')
             const text = args[0] || ''
             M.reply(`text : ${text}`)
             // const backgroundArgb = args.slice(3).map((arg) => `${parseInt(arg) / 16}${parseInt(arg) % 16}`) || 0x00000000
