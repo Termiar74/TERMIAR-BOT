@@ -48,7 +48,7 @@ export default class Command extends BaseCommand {
 │⋊ 𝐍𝐀𝐌𝐄: ◥꧁ད𝐓𝐄𝐑𝐌𝐈𝐀𝐑 𝐁𝐎𝐓🎭ཌ꧂◤
 │⋊ 𝐏𝐑𝐄𝐅𝐈𝐗: ${this.client.config.prefix}
 │⋊ 𝐎𝐖𝐍𝐄𝐑: *${this.client.config.prefix}mod*
-│⋊ 𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋 𝐆𝐑𝐎𝐔𝐏: https://chat.whatsapp.com/KgNMgAuJCDo398VA4FFSUn
+│⋊ 𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋 𝐆𝐑𝐎𝐔𝐏: https://chat.whatsapp.com/Jkw7iPJkjcN4iq1Fe1hwWe
 │◥꧁ད𝐓𝐄𝐑𝐌𝐈𝐀𝐑 𝐁𝐎𝐓🎭ཌ꧂◤
 │🌟𝐇𝐄𝐘 👋 𝐓𝐇𝐈𝐒 𝐈𝐒 𝐓𝐄𝐑𝐌𝐈𝐀𝐑 𝐁𝐎𝐓 𝟐.𝟎.
 │🌟𝐇𝐎𝐖 𝐌𝐀𝐘 𝐈 𝐂𝐀𝐍 𝐇𝐄𝐋𝐏 𝐘𝐎𝐔.
@@ -58,7 +58,7 @@ export default class Command extends BaseCommand {
 │ • 𝐅𝐎𝐑 𝐀𝐃𝐃𝐈𝐍𝐆 𝐌𝐄 𝐈𝐍 𝐀𝐍𝐘 𝐎𝐓𝐇𝐄𝐑 𝐆𝐑𝐎𝐔𝐏𝐒
 │   𝐂𝐎𝐍𝐓𝐀𝐂𝐓 𝐌𝐘 🤴𝐎𝐖𝐍𝐄𝐑 𝐒𝐈𝐑 𝐓𝐄𝐑𝐌𝐈𝐀𝐑🎭
 │ • @𝟕𝟎𝟔𝟖𝟏𝟒𝟑𝟎𝟒𝟗 
-│ ~ 𝐓𝐞𝐫𝐦𝐢𝐀𝐫 𝐁𝐨𝐭 𝟐.𝟎
+│ ~ 𝐓𝐞𝐫𝐦𝐢𝐀𝐫 𝐁𝐨𝐭
 ╰────────────┈平和                            \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
