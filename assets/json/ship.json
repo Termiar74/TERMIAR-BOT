@@ -7,7 +7,7 @@
         },
         {
             "id": 1,
-            "shipPercent": "5",
+            "shipPercent": "09",
             "gifLink": "https://c.tenor.com/jACzsM2_6YAAAAAC/argue-anime.gif"
         },
         {
@@ -104,6 +104,11 @@
             "id": 20,
             "shipPercent": "100",
             "gifLink": "https://c.tenor.com/RiwO7Sj0B-YAAAAd/keisuke-baji-chifuyu-matsuno.gif"
+         {
+            "id": 21,
+            "shipPercent": "10000",
+            "gifLink": "https://c.tenor.com/uYNjEbCbrOYAAAAM/tonikawa-tonikaku-kawaii.gif"
+         },
         }
     ]
 }
