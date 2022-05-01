@@ -20,12 +20,12 @@ export default class Command extends BaseCommand {
   ): Promise<void> => {
     if (!joined)
       return void M.reply(
-        `🟥 *Provide the index numbers of the characters in your gallery that you wanna swap. Example - ${this.client.config.prefix}schara 3 1*`
+        `🟥 *𝐏𝐫𝐨𝐯𝐢𝐝𝐞 𝐭𝐡𝐞 𝐢𝐧𝐝𝐞𝐱 𝐧𝐮𝐦𝐛𝐞𝐫𝐬 𝐨𝐟 𝐭𝐡𝐞 𝐜𝐡𝐚𝐫𝐚𝐜𝐭𝐞𝐫𝐬 𝐢𝐧 𝐲𝐨𝐮𝐫 𝐠𝐚𝐥𝐥𝐞𝐫𝐲 𝐭𝐡𝐚𝐭 𝐲𝐨𝐮 𝐰𝐚𝐧𝐧𝐚 𝐬𝐰𝐚𝐩. 𝐄𝐗𝐀𝐌𝐏𝐋𝐄 - ${this.client.config.prefix}schara 3 1*`
       );
     const terms: any = joined.split(" ");
     if (!terms[1] || terms[1] === "")
       return void M.reply(
-        `🟥 *You are doing it wrong. Example - ${this.client.config.prefix}schara 1 4*`
+        `🟥 *𝐘𝐨𝐮 𝐚𝐫𝐞 𝐝𝐨𝐢𝐧𝐠 𝐢𝐭 𝐰𝐫𝐨𝐧𝐠. 𝐄𝐗𝐀𝐌𝐏𝐋𝐄 - ${this.client.config.prefix}schara 1 4*`
       );
     const user = M.sender.jid;
     const data = await await this.client.getUser(user);
@@ -38,7 +38,7 @@ export default class Command extends BaseCommand {
       terms[1] > data.gallery.length
     )
       return void M.reply(
-        `🟥 *Invalid gallery index number.* *Example - ${this.client.config.prefix}swap 1 4*`
+        `🟥 *𝐈𝐧𝐯𝐚𝐥𝐢𝐝 𝐠𝐚𝐥𝐥𝐞𝐫𝐲 𝐢𝐧𝐝𝐞𝐱 𝐧𝐮𝐦𝐛𝐞𝐫. *𝐄𝐗𝐀𝐌𝐏𝐋𝐄 - ${this.client.config.prefix}swap 1 4*`
       );
     const i = terms[0] - 1;
     const w = terms[1] - 1;
@@ -49,6 +49,6 @@ export default class Command extends BaseCommand {
       { jid: user },
       { $set: { gallery: data.gallery } }
     );
-    await M.reply(`🟩 *Swapped ${terms[0]} & ${terms[1]}*`);
+    await M.reply(`🟩 *𝐒𝐰𝐚𝐩𝐩𝐞𝐝 ${terms[0]} & ${terms[1]}*`);
   };
 }
