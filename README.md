@@ -1,7 +1,7 @@
 <div align="center">
 <a href="https://github.com/iamherok/Cara_public"><img src="https://images6.alphacoders.com/102/thumb-1920-1024013.jpg" alt="chitoge" border="0"></a>
 
-# **Yotsuba : A WhatsApp BOT WITH RICH NSFW FEATURES BASED ON <a href="https://github.com/ShineiIchijo/Chitoge">CHITOGE</er></a></h1>**
+# **◥꧁ད𝐓𝐄𝐑𝐌𝐈𝐀𝐑 𝐁𝐎𝐓🎭ཌ꧂◤ : A WhatsApp BOT WITH RICH NSFW FEATURES BASED ON <a href="https://github.com/ShineiIchijo/Chitoge">◥꧁ད𝐓𝐄𝐑𝐌𝐈𝐀𝐑 𝐁𝐎𝐓🎭ཌ꧂◤</er></a></h1>**
 
 [![CodeFactor](https://www.codefactor.io/repository/github/shineiichijo/chitoge/badge)](https://www.codefactor.io/repository/github/shineiichijo/chitoge)
 
@@ -26,12 +26,12 @@
 ## 💻 Deploy/Hosting Guide
 
 -   Section Moved to
-    [Chitoge-Guides](https://github.com/ShineiIchijo/Chitoge-Guides/blob/main/README.md)
+    [ད𝐓𝐄𝐑𝐌𝐈𝐀𝐑 𝐁𝐎𝐓🎭ཌ-Guides](https://github.com/ShineiIchijo/Chitoge-Guides/blob/main/README.md)
 
 ## 🍥 Features of the Repo
 
 -   To view all features, click
-    here➡️[Chitoge_featuresList.md](https://github.com/ShineiIchijo/Chitoge/blob/main/Features.md)
+    here➡️[Chiotge_featuresList.md](https://github.com/ShineiIchijo/Chitoge/blob/main/Features.md)
 
 ## 💪 Contribution
 
