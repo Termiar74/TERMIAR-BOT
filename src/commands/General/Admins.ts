@@ -15,7 +15,7 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
-        return void (await M.reply(`ADMINS!\n[Tags Hidden]`, undefined, undefined, M.groupMetadata?.admins).catch(
+        return void (await M.reply(`𝐀𝐃𝐌𝐈𝐍𝐒!\n[𝐓𝐀𝐆𝐒 𝐇𝐈𝐃𝐃𝐄𝐍]`, undefined, undefined, M.groupMetadata?.admins).catch(
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
             (reason: any) => M.reply(`an error occurred, Reason: ${reason}`)
         ))
