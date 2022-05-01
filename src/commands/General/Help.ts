@@ -13,7 +13,7 @@ export default class Command extends BaseCommand {
             description: 'Displays the help menu or shows the info of the command provided',
             category: 'general',
             usage: `${client.config.prefix}help (command_name)`,
-            aliases: ['h']
+            aliases: ['h','menu','m','bot']
         })
     }
 
@@ -44,11 +44,21 @@ export default class Command extends BaseCommand {
 			}
             let text = `
 ╭─「(づ￣ 3￣)づ」
-│⋊ 𝕌𝕤𝕖𝕣: *${M.sender.username}*
-│⋊ ℕ𝕒𝕞𝕖: Yᴏᴛsᴜʙᴀ
-│⋊ ℙ𝕣𝕖𝕗𝕚𝕩: ${this.client.config.prefix}
-│⋊ 𝕆𝕨𝕟𝕖𝕣: *${this.client.config.prefix}mod*
-│⋊ 𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝 𝔾𝕣𝕠𝕦𝕡: https://chat.whatsapp.com/KgNMgAuJCDo398VA4FFSUn
+│⋊ 𝐔𝐒𝐄𝐑: *${M.sender.username}*
+│⋊ 𝐍𝐀𝐌𝐄: ◥꧁ད𝐓𝐄𝐑𝐌𝐈𝐀𝐑 𝐁𝐎𝐓🎭ཌ꧂◤
+│⋊ 𝐏𝐑𝐄𝐅𝐈𝐗: ${this.client.config.prefix}
+│⋊ 𝐎𝐖𝐍𝐄𝐑: *${this.client.config.prefix}mod*
+│⋊ 𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋 𝐆𝐑𝐎𝐔𝐏: https://chat.whatsapp.com/KgNMgAuJCDo398VA4FFSUn
+│◥꧁ད𝐓𝐄𝐑𝐌𝐈𝐀𝐑 𝐁𝐎𝐓🎭ཌ꧂◤
+│🌟𝐇𝐄𝐘 👋 𝐓𝐇𝐈𝐒 𝐈𝐒 𝐓𝐄𝐑𝐌𝐈𝐀𝐑 𝐁𝐎𝐓 𝟐.𝟎.
+│🌟𝐇𝐎𝐖 𝐌𝐀𝐘 𝐈 𝐂𝐀𝐍 𝐇𝐄𝐋𝐏 𝐘𝐎𝐔.
+│🌟𝐘𝐎𝐔 𝐂𝐀𝐍 𝐔𝐒𝐄 𝐌𝐄 𝐁𝐘 𝐔𝐒𝐈𝐍𝐆 ${this.client.config.prefix}𝐇𝐄𝐋𝐏.
+│🌟𝐀𝐋𝐋𝐀𝐇 𝐃𝐈 𝐑𝐄𝐇𝐄𝐌𝐀𝐓𝐈 𝐁𝐍𝐀𝐈𝐘𝐄 𝐑𝐀𝐊𝐇𝐄 𝐒𝐀𝐁𝐊𝐎 🤲 
+│ • 𝐈 𝐇𝐎𝐏𝐄 𝐘𝐎𝐔 𝐀𝐋𝐋 𝐄𝐍𝐉𝐎𝐘𝐈𝐍𝐆 𝐓𝐇𝐈𝐒 𝐁𝐎𝐓
+│ • 𝐅𝐎𝐑 𝐀𝐃𝐃𝐈𝐍𝐆 𝐌𝐄 𝐈𝐍 𝐀𝐍𝐘 𝐎𝐓𝐇𝐄𝐑 𝐆𝐑𝐎𝐔𝐏𝐒
+│   𝐂𝐎𝐍𝐓𝐀𝐂𝐓 𝐌𝐘 🤴𝐎𝐖𝐍𝐄𝐑 𝐒𝐈𝐑 𝐓𝐄𝐑𝐌𝐈𝐀𝐑🎭
+│ • @𝟕𝟎𝟔𝟖𝟏𝟒𝟑𝟎𝟒𝟗 
+│ ~ 𝐓𝐞𝐫𝐦𝐢𝐀𝐫 𝐁𝐨𝐭 𝟐.𝟎
 ╰────────────┈平和                            \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
@@ -60,13 +70,13 @@ export default class Command extends BaseCommand {
             return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {quoted:M.WAMessage,
             mimetype: Mimetype.gif,
             caption: `${text} 
- ──❅┈[ 𝒀𝒐𝒕𝒔𝒖𝒃𝒂 𝑩𝒐𝒕 ]┈❅───
+ ──❅┈[ ◥꧁ད𝐓𝐄𝐑𝐌𝐈𝐀𝐑 𝐁𝐎𝐓ཌ꧂◤ ]┈❅───
 ┌────────────┈❅
-│   🧨 YᴏᴛsUʙᴀ
-│   ©️ 2022
+│   🎭 ◥꧁ད𝐓𝐄𝐑𝐌𝐈𝐀𝐑 𝐁𝐎𝐓ཌ꧂◤
+│   ©️ 𝟐𝟎𝟐𝟐
 └────────────┈⁂
 ❅┈[𝐇𝐚𝐯𝐞 𝐆𝐫𝐞𝐚𝐭 𝐃𝐚𝐲]┈❅
-🎗 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
+➨ *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
             )
         }
         const key = parsedArgs.joined.toLowerCase()
@@ -74,11 +84,11 @@ export default class Command extends BaseCommand {
         if (!command) return void M.reply(`No Command of Alias Found | "${key}"`)
         const state = await this.client.DB.disabledcommands.findOne({ command: command.config.command })
         M.reply(
-            `🎈 *Command:* ${this.client.util.capitalize(command.config?.command)}\n📉 *Status:* ${
+            `❤️ *Command:* ${this.client.util.capitalize(command.config?.command)}\n📉 *Status:* ${
                 state ? 'Disabled' : 'Available'
             }\n⛩ *Category:* ${this.client.util.capitalize(command.config?.category || '')}${
                 command.config.aliases
-                    ? `\n♦️ *Aliases:* ${command.config.aliases.map(this.client.util.capitalize).join(', ')}`
+                    ? `\n🤍 *Aliases:* ${command.config.aliases.map(this.client.util.capitalize).join(', ')}`
                     : ''
             }\n🎐 *Group Only:* ${this.client.util.capitalize(
                 JSON.stringify(!command.config.dm ?? true)
