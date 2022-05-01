@@ -52,14 +52,14 @@ export default class Command extends BaseCommand {
       {
         buttonId: "tchara-confirm",
         buttonText: {
-          displayText: `${this.client.config.prefix}tchara-confirm`,
+          displayText: `${this.client.config.prefix}𝐓𝐂𝐇𝐀𝐑𝐀-𝐂𝐎𝐍𝐅𝐈𝐑𝐌,
         },
         type: 1,
       },
       {
         buttonId: "tchara-delete",
         buttonText: {
-          displayText: `${this.client.config.prefix}tchara-delete`,
+          displayText: `${this.client.config.prefix}𝐓𝐂𝐇𝐀𝐑𝐀-𝐃𝐄𝐋𝐄𝐓𝐄`,
         },
         type: 1,
       },
@@ -67,7 +67,7 @@ export default class Command extends BaseCommand {
     const text = `Character trade started\n\nOffer: ${gallery[i].name} (From ${gallery[i].source})\n\nFor: ${chara.name} (From ${source[0].anime.title})`;
     const buttonMessage: any = {
       contentText: `${text}`,
-      footerText: "🚀levi🚀",
+      footerText: "❤️𝐁𝐄𝐒𝐓 𝐁𝐎𝐓❤️",
       buttons: buttons,
       headerType: 1,
     };
