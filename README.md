@@ -14,14 +14,6 @@
 </div><br/>
 <br/>
 
-Button : If you are deploying from a fork if you want to deploy ◥꧁ད𝐓𝐄𝐑𝐌𝐈𝐀𝐑 𝐁𝐎𝐓🎭ཌ꧂◤ Bot
-
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-</div><br/>
-
-<br/>
-
 ## ✨ Highlights
 
 -   Fully Modular Design
